@@ -1,0 +1,71 @@
+Inputs:
+- String
+Outputs:
+- Number of characters
+- display the input string
+Process:
+- Prompt for something
+- Count each character from input string
+- Display input string and the number of characters
+Constraints:
+- No empty string (just to count more than 0)
+- We should not count empty spaces
+Test Cases:
+1: Prompt user to input something
+2: "ABC 123 &%/ "
+3: Output: "ABC 123 &%/" number of characters "9"
+1: Prompt user to input something
+2: ""
+3: Output: error: Please enter something other than spaces
+1: Prompt user to input something
+2: "     " 
+3: Output: "     " number of characters "0"
+Pseudo Code:
+
+CountCharacters
+    Initialize numberOfChars = 0
+    Initialize string = ""
+    Initialize position = 1
+    
+    Prompt for string with "Enter something here"
+    //Index indicates current character in the string
+    if string is empty then
+      Display: "Error: Please enter something other than spaces"
+    else
+      Loop 
+        if (take character in position from string) is not equal " " then
+          numberOfChars = numberOfChars + 1
+        end 
+        position = position + 1
+      until end of string
+          Display: string
+      Display: numberOfChars
+    endif
+End
+
+Test Run:
+"Carlos 123" 
+position 1  
+"C"
+numberOfChars = 1
+
+Position = 2
+Position 2
+"a"
+numberOfChars = 2
+
+position = 3
+Position 3
+"r"
+numberOfChars = 3
+
+position = 4
+...
+Position 7
+" "
+numberOfChars = 6
+
+position = 7
+...
+Display "Carlos 123"
+Display "9"

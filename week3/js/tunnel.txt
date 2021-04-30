@@ -1,0 +1,24 @@
+Input
+    Beginning of The Tunnel
+        (Mom, Dad, Son, Daughter)
+      
+Constraints
+    Speed Limit 
+    time limit of the torch
+    Tunnel width
+    
+Steps
+    BEGIN
+        Dad take the torch
+        Dad and Mom pass the tunnel
+        Dad go back
+        Son take the torch
+        Son and daughter pass the tunnel
+        Mom take the torch
+        Mom go back
+        Dad and Mom pass the tunnel
+    END
+
+Output
+    At the end of The Tunnel
+        (Mom, Dad, Son, Daughter)

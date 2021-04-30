@@ -1,0 +1,17 @@
+BEGIN Sort
+    input = [3,5,1,2,4]
+    output = []
+    digits = input
+    BEGIN WHILE length of digits > 0
+        lowest = digits->firstItem
+        BEGIN LOOP digits
+            FOR EACH digit in digits
+                IF lowest > digit
+                    lowest = digit
+                END 
+        END  
+        output->addItem(lowest) #1. output=[1] 2. output = [1,2]
+        digits = digits without lowest 
+    END 
+    PRINT output
+END Sort

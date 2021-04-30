@@ -1,0 +1,110 @@
+Exercises
+For each exercise follow this process:
+List inputs, process and outputs
+Write test cases
+Find constraints
+Write the algorithm in pseudocode
++List inputs, process and outputs
+--Input String, 
+--Count the chars.
+--output same as input string + #nput’s chars
++Write test cases
+-- input = book ⇒ book 4
+-- input = ;laksdjf;alksdjf;lakjpqoweuir9823049 ⇒ ;laksdjf;alksdjf;lakjpqoweuir9823049 36 
+-- (consts max length 40 )
+   Input = ;laksdjf;alksdjf;lakjpqoweuir982304901234 ⇒ error
+-- input =”” ⇒ error 
+Find constraints
+MaxLength = 40; MinLength = 1;
+Pseudo Code
+- initialize Input;
+- initialize output
+- Ask Input from User
+- Read Input (is string);
+- calculate input’s length
+- if inputsLengt > MaxLength || inputsLength < MinLength
+	return error 
+  else  
+	Output = Input +”  ” +InputsLength;
+- show Output
+white_check_mark
+eyes
+raised_hands
+
+
+
+
+
+8:28
+Create a program that prompts for a quote and an author. Display the quotation and author as shown here:
+[Author] says, "[Quote]" (Replace [Author] and [Quote] with the actual values.
++List inputs, process and outputs
+Author Name
+Quoted Sentence
+Take the Name of the Author and quoted sentence and 
+Organize the Output like [Author] says, "[Quote]"
+Show the Output
++Write test cases
+What if author and Quote is empty
+Input Autoher or / and input quote = ‘’ ⇒ error
+Input Autor = ‘George Orwell’ 
+Input quote = “Perhaps one did not want to be loved so much as to be understood.”
+⇒ George Orwell says, “Perhaps one did not want to be loved so much as to be understood.”
+Input Autor = ‘Ge8rge 000rwell’ 
+Input quote = “Perh_*-/-*334\]~ one did not want to be loved so much as to be understood.” ⇒ error
++Find constraints
+The name input just contains alphabet chars.
+The quote input contains alphabet chars + numbers + ! + ? + , + ; + . + — + - + …+ ‘
+Ha…?!;,bil, Habil…?!;, 
+Both inputs can’t be empty and can’t contains just one char.
++Write the algorithm in pseudocode
+Initialize NameInput = ’ ’;
+Initialize QuoteInput = ’ ’;
+Initialize Output =’ ’;
+Ask for name of the author
+Read the NameInput (assign given name to NameInput also)
+Ask for name of the quote
+Read the QuoteInput (assign given sentence to QuoteInput also)
+If (checkName(NameInput) && checkQuto(QuoteInput))
+{
+	Output  = NameInput+ “ says” +”+QuoteInput+”
+}
+else{
+ 	error
+}
+Show Output
+Function checkName(NameInput){
+Boolean isOk = true;
+	If NameInput s length = 0 or 1 {
+	isOk = false;
+	return isOK;
+	}
+	If NameInput has numbers or special chars {
+	isOk = false;
+	return isOK;
+	}
+return isOK;
+}
+8:29
+Function checkQuto(QuoteInput){
+Boolean isOk = true;
+	If QuoteInput s length = 0 or 1 {
+		isOk = false;
+		return isOK;
+		}
+	If QuoteInput contains ~[alphabetchars+ numbers + ! + ? + , + ; + . +—+-+…+‘+$]
+		{
+		isOk = false;
+		return isOK;
+	}
+else if 	QuoteInput’s defined special chars used together (... is other case) {
+	}
+		isOk = false;
+		return isOK;
+	}
+else if QuotedInput
+… 		isOk = false;
+		return isOK;
+}
+Return isOk
+}

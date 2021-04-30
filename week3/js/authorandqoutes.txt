@@ -1,0 +1,87 @@
+## PROBLEM: Create a program that prompts for a quote and an author. Display the quotation and author as shown here:
+[Author] says, "[Quote]" (Replace [Author] and [Quote] with the actual values.
+
+                            De Cartes
+
+                            I think therefore I exist
+
+                            De Cartes says, "I think therefore I exist"
+
+# Inputs  
+    author equals an empty string
+    quote equals an empty string
+    allowedAuthorChars = [a-zA-Z0-9] # exclude #@$%
+    allowedQuoteChars = [a-zA-Z0-9.,!?:;]
+
+# Constraints
+    Check author for bad chars
+    Check quote for bad chars
+
+# Steps:
+    author = getAuthorName() from STDIN
+    checkAuthorName(author)
+    if author doesnt contain any bad chars
+        RETURN True
+    quote = getQuote() from STDIN
+    checkQuote(quote)
+    if quote doesnt contain any bad chars 
+        RETURN True
+
+# Output 
+    print "author says, quote"
+--------------------------------------------------------
+
+BEGIN sayquote
+    # Input
+    author = ""
+    quote = ""
+    allowedChars = [a-zA-Z0-9]
+    allowedQuoteChars = [a-zA-Z0-9.,!?:; ]
+
+    # Constraints
+    BEGIN checkAuthorName(author)
+        BEGIN author->length > 0
+            BEGIN FOR EACH letter IN author
+                BEGIN IF allowedAuthorChars doesnt contain letter
+                    RETURN False
+                END
+            END
+            RETURN True
+        ELSE
+            RETURN False
+    END
+
+    BEGIN checkQuote(quote)
+        BEGIN quote->length > 0
+            BEGIN FOR EACH letter IN quote
+                BEGIN IF allowedQuoteChars doesnt contain letter
+                    RETURN False
+                END
+            END
+            RETURN True
+        ELSE
+            RETURN False
+    END
+
+    # Steps
+    author = getAuthorName() from STDIN
+    BEGIN IF checkAuthorName(author) is True 
+        quote = getQuote() from STDIN
+        BEGIN IF checkQuote(quote) is True
+            print "author says, quote" 
+        ELSE
+            printQuoteError
+    ELSE
+        printAuthorError
+    END
+END
+ 
+
+
+
+
+
+
+
+
+

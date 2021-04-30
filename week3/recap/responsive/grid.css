@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+header {
+    padding: 100px;
+    background-color: darkorange;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    list-style: none;
+    height: auto;  
+    
+}
+
+li {
+    padding: 200px;
+}
+
+.box1{
+    
+    background-color: darkturquoise;
+    
+
+}
+
+.box2{
+  
+    background-color: rgb(24, 209, 0);
+ 
+}
+
+.box3{
+   
+    background-color: rgb(226, 45, 106);
+    
+}
+
+footer {
+    padding: 100px;
+    background-color: dimgray;
+}
+
+@media only screen  and (max-width: 500px) { 
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr;      
+    }
+    
+}
+
+
+

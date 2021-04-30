@@ -1,0 +1,29 @@
+html {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: bisque;
+    padding: 20rem;
+}
+
+main {
+    background-color: rgb(183, 190, 219);
+    padding: 20rem;
+}
+
+footer {
+    background-color: burlywood;
+    flex: auto;
+}

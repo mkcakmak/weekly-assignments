@@ -1,0 +1,42 @@
+html {
+    box-sizing: inherit;
+    font-size: 0.625rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+header {
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+}
+
+ul {
+    padding: 1rem;
+    list-style: none;  
+    border: 0.5rem solid rgb(86, 98, 110); 
+    border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    flex: 1 1 300px;
+    font-size: 2rem;
+    background-color:rgb(89, 161, 175);
+    margin: 0.5rem;
+    color: white;
+    font-weight: bold;    
+    padding: 1rem;
+}

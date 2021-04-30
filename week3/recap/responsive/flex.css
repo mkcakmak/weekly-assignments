@@ -1,0 +1,53 @@
+html{
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-align:center
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 100px;
+    background-color: darkorange;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+
+.box1{
+    padding: 200px;
+    background-color: darkturquoise;
+    flex: auto;
+
+}
+
+.box2{
+    padding: 200px;
+    background-color: rgb(24, 209, 0);
+    flex: auto;
+}
+
+.box3{
+    padding: 200px;
+    background-color: rgb(226, 45, 106);
+    flex: auto;
+}
+
+footer {
+    padding: 100px;
+    background-color: dimgray;
+}
+
+

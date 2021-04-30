@@ -1,0 +1,36 @@
+BEGIN GetDayOfTheYear
+    # key:value
+    # Februar 33
+    months = [1:January,2:February,...,12:December]
+    daysPerMonth = [1:31,2:28,3:31,4:30...,12:31]
+    inputDay; #1-31
+    inputMonth; #1-12
+    output;
+
+    BEGIN checkCorrectDate(inputDay,inputMonth)
+        BEGIN IF inputDay > 31 OR inputDay < 1
+            RETURN errormessage1
+        END 
+        BEGIN IF inputMonth > 12 OR inputMonth < 1
+            RETURN errormessage2
+        END 
+        BEGIN LOOP daysPerMonth as item
+ /           IF item->key equals inputMonth /
+                IF inputDay > item->value
+                    RETURN errormessage3
+                END
+            END
+        END
+        RETURN true
+    END
+
+    BEGIN calculateDayOfTheYear(inputDay,inputMonth)
+        output = inputDay; #17
+        BEGIN FOR EACH item in daysPerMonth 
+            IF item->key < inputMonth #11
+                output = output + item->value 
+            END  
+        END
+        RETURN output
+    END
+END

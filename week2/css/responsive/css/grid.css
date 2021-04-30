@@ -1,0 +1,60 @@
+html{
+    box-sizing: border-box;
+    font-size: 0.625rem;
+  }
+  
+  * {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  
+  header{
+    background-color: aqua;
+    padding:10rem;
+    font-size: 3rem;
+  }
+  
+  ul {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    
+  }
+  
+  li {
+    
+    padding: 10rem 15rem;
+    font-size: 3rem;
+   
+  }
+  
+  .blue {
+    background-color: rgb(62, 62, 187);
+  }
+  .red {
+    background-color: rgb(201, 77, 77);
+  }
+  .green {
+    background-color: rgb(123, 128, 61);
+  }
+  
+  section{
+    font-size: 3rem;
+    background-color: seagreen;
+    padding:10rem;
+  }
+  
+  footer {
+    padding:10rem;
+    font-size: 3rem;
+    background-color: rgb(174, 210, 216);
+  }
+  @media only screen and (max-width: 47em){
+    ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

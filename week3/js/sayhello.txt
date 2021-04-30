@@ -1,0 +1,34 @@
+Inputs: Name
+Output: Hi <name>!
+Process: 
+
+- Type Name
+- Receive Name
+- Add name to the Hello message
+- Print Hello message with name in it.
+
+Test Case:
+- Write "Carlos"
+- Click button
+- Add "Carlos" to Hello message = "Hi Carlos!"
+- Print on screen the message = "Hi Carlos!"
+
+Constraints:
+- No numbers
+- No Empty name
+- limit to 50 characters
+- No space in name
+- Allow only special chars like '
+
+Extra requirement:
+We use a button to print the name
+
+Step 1: User writes name on input box, we store on Name variable
+Step 2: User clicks on button
+Step 3: If Name contains numbers then return error message "No numbers!"
+Step 4: If Name is empty then return error message "Please enter a name"
+Step 5: If Name > 50 characters then limit name to 50 characters
+Step 6: If name contains spaces then return error "Please do not add spaces to name"
+Step 7: if name contains other than ' then return error message "please use only ' for name"
+step 8: Message = "Hello " + Name + "!"
+Step 9: Print on screen Message

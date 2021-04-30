@@ -1,0 +1,58 @@
+html{
+  box-sizing: border-box;
+  font-size: 0.625rem;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  background-color: aqua;
+  flex:1;
+  padding:10rem;
+  font-size: 3rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+li {
+  flex:auto;
+  padding: 10rem 15rem;
+  font-size: 3rem;
+ 
+}
+
+.blue {
+  background-color: rgb(62, 62, 187);
+}
+.red {
+  background-color: rgb(201, 77, 77);
+}
+.green {
+  background-color: rgb(123, 128, 61);
+}
+
+section{
+  font-size: 3rem;
+  background-color: seagreen;
+  padding:10rem;
+}
+
+footer {
+  padding:10rem;
+  font-size: 3rem;
+  background-color: rgb(174, 210, 216);
+}

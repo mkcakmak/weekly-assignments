@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+<!--Form Start-->
+
+    <form action="form2.html" method="POST">
+        
+        <h1>Profil</h1>
+            You can give some information here
+            <hr>
+            
+<!--Personal Information-->
+        <div>
+            <h2>Personal Information</h2>
+           
+            <div>
+                <label for="title">Title :</label>
+                <input type="text" id="title" placeholder="Dr hc." required>
+            </div>
+
+            <div>
+                <label for="firstName">First Name :</label>
+                <input type="text" id="firstName" placeholder="Muhammed" required>
+            </div>
+
+            <div>
+                <label for="lastName">Last Name :</label>
+                <input type="text" id="lastName" placeholder="Cakmak" required>
+            </div>
+
+            <div>
+                Gender :
+                <label for="male" id="gender">Male</label>
+                <input type="radio" name="gender" id="male" required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
+            </div>
+
+            <div>
+                Language :
+                <label for="english">English</label>
+                <input type="checkbox" id="english">
+                <label for="french">French</label>
+                <input type="checkbox" id="french">
+                <label for="german">German</label>
+                <input type="checkbox" id="german">
+            </div>
+           
+            <hr>
+           
+        
+        </div>
+
+<!--Contact Information-->
+
+        <div>
+            <h2>Contact Information</h2>
+
+            <div>
+                <label for="telefon">Telephone Number :</label>
+                <input type="text" name="telefon" id="telefon" required>
+            </div>
+
+            <div>
+                <label for="mobile">Mobile Telephone :</label>
+                <input type="text" name="mobile" id="mobile" placeholder="optional">
+            </div>
+
+            <div>
+                <label for="mainNumber">Main Number :</label>
+                <input type="text" name="mainNumber" id="mainNumber" placeholder="optional">
+            </div>
+
+            
+            <div>
+                <label for="fax">Fax :</label>
+                <input type="text" name="fax" id="fax" placeholder="optional">
+            </div>
+
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="email2">Email 2 :</label>
+                <input type="email" name="email2" id="email2" placeholder="optional">
+            </div>
+
+        </div>       
+        <hr>
+
+<!--Adress Details-->     
+
+        <div>
+            <h2>Adress Details</h2>
+            
+            <div>
+                <label for="firm">Firm :</label>
+                <input type="text" name="firm" id="firm" required>
+            </div>
+
+            <div>
+                <label for="additiveFirm">Addional Firm :</label>
+                <input type="text" name="additiveFirm" id="additiveFirm" placeholder="optional">
+            </div>
+
+            <div>
+                <label for="homepage">Homepage :</label>
+                <input type="text" name="homepage" id="homepage" placeholder="optional">
+            </div>
+
+            <div>
+                <label for="adress">Adress/Hause Number :</label>
+                <input type="text" name="adress" id="adress" placeholder="Ziegelbrückstrasse" required>
+                <label for="hause"></label>
+                <input type="text" name="hausenumber" id="hausenumber" placeholder="22" required>
+            </div>
+
+            <div>
+                <label for="additionalAdress">Additional Adress :</label>
+                <input type="text" name="additionalAdress" id="additionalAdress" placeholder="optional">
+            </div>
+
+            <div>
+                <label for="postbox">Post Box :</label>
+                <input type="text" name="postbox" id="postbox" placeholder="optional">
+            </div>
+
+            <div>
+                <label for="postcode">Post Code/ Place :</label>
+                <input type="text" name="postcode" id="postcode" placeholder="8867" required>
+                <label for="place"></label>
+                <input type="text" name="place" id="place" placeholder="Niederurnen" required>
+            </div>
+
+            <div>
+                <label for="canton"> Canton/Country :</label>
+                <input type="text" name="canton" id="canton" placeholder="Glarus" required>
+                <label for="country"></label>
+                <input type="text" name="country" id="country" placeholder="Switzerland" required>
+            </div>
+
+            
+        </div>
+
+            <br>
+            <input type="submit" name="submit" id="submit" value="Send">
+      
+    </form>
+
+</body>
+</html>

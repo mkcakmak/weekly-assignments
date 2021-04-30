@@ -1,0 +1,65 @@
+# Inputs = variables
+
+goods = [corn, fo, goose]
+item = selected option of goods
+dir  [left, right]
+
+# Contraints = validation check, return true or false
+
+check item Item in boat 
+checks hoe many items as well as empty
+
+check item on shore
+
+
+BEGIN checkItemsOnShore(currentValue)
+
+        result = leftShore --> firstItem #corm
+        remove result from list
+
+        IF  firstShore contains "goose" and "fox"
+            return False
+        ELSE IF firstShore Contains "goose" and "corn"
+            return False
+        ELSE 
+            return true
+        
+            
+            RETURN  leftShore --> firstItem
+        ELSE 
+            RETURN rightShore --> firstItem
+
+END
+
+# Steps
+
+BEGIN getItem(dir)
+    BEGIN IF dir=left
+        BEGIN LOOP leftShore
+            BEGIIN IF checkItemsOnShore(currentValue)
+                RETURN currentValue #where you currently  are in your  loop: 1.corm, 2.fox, 3.goose
+            END
+        END
+    END
+END
+
+transferItem(ite, dir)
+
+
+
+
+
+load (item)
+
+transfer (item, direction)
+
+unload (item)
+
+
+
+
+# output
+
+check Right shore  #only if right shore equals goods
+
+END  FoGoCo
