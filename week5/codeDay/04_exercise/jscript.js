@@ -1,17 +1,25 @@
-function books(name, price, sold) {
-    this.name = name;
+function books(bookName, price, sold) {
+    this.bookName = bookName;
     this.price = price;
     this.sold = sold;
     
   };    
 
-let History = new books("History","20 CHF","sold");
-let Science = new books("Science","30 CHF","sold");
-let Maths = new books("Maths","40 CHF","sold");
+let b1 = new books("history","50","sold");
+let b2 = new books("science","30","sold");
+let b3= new books("maths","40","sold");
 
-let bookList=["History","Science","Maths"]
-bookList.sort();
+let bookList=[];
+bookList.push(b1);
+bookList.push(b2);
+bookList.push(b3);
 
+bookList.sort(function (a, b) {
+  
+});
+console.log(bookList);
+
+/*
 document.getElementById("lst").innerHTML=bookList;
 
 let user=prompt("give a book name");
@@ -20,3 +28,4 @@ bookList.push(user);
 
 alert(bookList);
 
+*/

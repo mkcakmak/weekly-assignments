@@ -1,4 +1,7 @@
 /* Text Elements */
+body {
+  display: flex;
+}
 h1 {
   margin-bottom: .75rem;
   color: #dae4e9;
@@ -48,7 +51,7 @@ img {
 }
 
 .fig-1 {
-  max-width: 240px;
+  
 }
 
 picture {
@@ -65,32 +68,30 @@ picture {
   /* Text Elements */
 
   h1 {
-    grid-area: title;
+  
   }
 
   /* Layout Elements */
 
   aside {
-    grid-area: aside;
+    
   }
 
   section {
     padding-left: 0vw;
-    grid-area: main;
+    
   }
 
   main {
-    display: grid;
-
-    grid-column-gap: 2vw;
+    
   }
 
   .fig-1 {
-    grid-area: fig-1;
+    
   }
 
   picture {
-    grid-area: banner;
+  
   }
 }
 
@@ -119,9 +120,6 @@ picture {
       padding-right: 0vw;
       padding-left: 0vw;
 
-      grid-template-areas: '. aside . fig-2 fig-2' 'title title banner banner banner' 'fig-1 main banner banner banner';
-      grid-template-rows: repeat(3 , auto);
-      grid-template-columns: repeat(5 , 1fr);
     }
 
     section {
@@ -140,7 +138,7 @@ picture {
     .fig-2 {
       margin-bottom: .75rem;
 
-      grid-area: fig-2;
+      
     }
   }
 }
